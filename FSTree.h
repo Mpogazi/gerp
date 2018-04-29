@@ -41,7 +41,6 @@ public:
     void burn_tree();
 
 private:
-
     DirNode *root;
 
 };

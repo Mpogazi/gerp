@@ -20,6 +20,9 @@ int main(int argc, char *argv[])
 	return 0;
 }
 
+// Function: print_dir(DirNode *, string)
+// Does: Prints all the files in subdirectories
+// and the files in directory
 void print_dir(DirNode *directory, string path) 
 {
 	int count = directory->num_subdirs(), 
@@ -33,6 +36,6 @@ void print_dir(DirNode *directory, string path)
 		}
 
 	for(int i = 0; i < files; i++)
-		cout << path << "/" << directory->get_file(i) << endl;
+		cout << path << "/"<< directory->get_file(i) << endl;
 	cout << path << endl;
 }
